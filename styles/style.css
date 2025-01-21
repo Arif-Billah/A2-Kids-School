@@ -6,3 +6,86 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+
+/* navbar related css */
+.navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.site-name{
+    font-weight: 700px;
+    font-size: 1.85rem;
+    margin-left: 11px;
+}
+.logo{
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    max-width:62px ;
+    
+}
+
+.nav-link{
+   text-decoration: none;
+   font-weight: 700px;
+   font-size: 1.25rem;
+}
+.active-1{
+    color:#FEA301;
+}
+.active-2{
+    color:#01ACFD;
+}
+.active-3{
+    color:#05D4DF;
+}
+.active-4{
+    color:#5D58EF;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+  .btn-primary{
+   background-color: #FEA301;
+   padding: 10px 60px;
+   font-size: 1.25rem;
+   font-weight: 600px;
+   border-radius: 5px;
+   border: none;
+   color: #FFFFFF;
+  }
+  .display-hidden{
+    display: none;
+  }
+
+  @media screen and (max-width:576px) {
+    .site-name,
+    .nav-links,
+    .btn-primary
+    {
+        display:none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .display-hidden{
+        display: block;
+       
+    }
+    .logo img{
+        max-width: 50px;
+    }
+
+  }
+
+  
+ 
