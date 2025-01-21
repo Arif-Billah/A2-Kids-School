@@ -11,6 +11,10 @@
 .display-flex{
     display: flex;
 }
+.bg-light{
+    background-color:  rgba(255, 144, 14, 0.1);
+  }
+  
 
 /* navbar related css */
 .navbar{
@@ -67,6 +71,48 @@
     display: none;
   }
 
+  /* banner related css */
+  .banner{
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+  .banner-container{
+    justify-content: space-around;
+    align-items: center;
+    gap:50px
+  }
+  .banner-image img{
+    max-width: 450px;
+    
+  }
+  #text-1{
+    color: #FEA301;
+  }
+  #text-2{
+    color:#01ACFD;
+  }
+  #text-3{
+    color:#111111
+  }
+  .banner-title{
+    font-weight: 700px;
+    font-size: 3.5rem;
+  }
+  .banner-description{
+    font-weight: 400px;
+    font-size: 1.25rem;
+    color:#111111;
+  }
+  .btn-primary-2{
+    background-color:#111111;
+    padding: 10px 60px;
+    font-size: 1.25rem;
+    font-weight: 600px;
+    border-radius: 5px;
+    border: none;
+    color:#FFFFFF;
+  }
+
   @media screen and (max-width:576px) {
     .site-name,
     .nav-links,
@@ -84,6 +130,22 @@
     .logo img{
         max-width: 50px;
     }
+
+    /* banner */
+    .banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+    }
+    .banner-image img{
+        max-width: 100%;
+        
+      }
+     .banner{
+        /* max-width: 1158px; */
+        /* margin: 0 auto; */
+      } 
 
   }
 
