@@ -81,6 +81,11 @@
     align-items: center;
     gap:50px
   }
+  .banner-content{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
   .banner-image img{
     max-width: 450px;
     
@@ -138,14 +143,22 @@
         align-items: center;
         gap:0px;
     }
+    /* .banner{
+      max-width: 1158px;
+      margin: 0 auto;
+    }  */
+
+    .banner-content{
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
     .banner-image img{
         max-width: 100%;
+        text-align: center;
         
       }
-     .banner{
-        /* max-width: 1158px; */
-        /* margin: 0 auto; */
-      } 
+     
 
   }
 
