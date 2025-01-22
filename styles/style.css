@@ -14,6 +14,14 @@
 .bg-light{
     background-color:  rgba(255, 144, 14, 0.1);
   }
+  .max-width{
+    max-width: 1158px;
+    margin: 0 auto;
+  }
+  .section-title{
+    font-weight: 700px;
+    font-size: 3rem;
+  }
   
 
 /* navbar related css */
@@ -81,11 +89,11 @@
     align-items: center;
     gap:50px
   }
-  .banner-content{
+  /* .banner-content{
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-  }
+  } */
   .banner-image img{
     max-width: 450px;
     
@@ -117,6 +125,81 @@
     border: none;
     color:#FFFFFF;
   }
+
+  /* standard curriculum */
+
+  .standard-curriculum{
+    background-image: url(../assets/bg.png);
+    /* background-repeat: no-repeat;  */
+  }
+
+  .section-title{
+    text-align: center;
+  }
+
+  .curriculum-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+     /* border: 5px solid salmon; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* align-content: center; */
+  }
+  .curriculum-curd{
+    border:0px;
+    display: grid;
+    width: 360px;
+    height: 470px;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* max-width: 350px; */
+    /* background: linear-gradient(to bottom,#DEF5FF, #FFFFFF); */
+    /* background:linear-gradient(#DEF5FF, #FFFFFF); */
+    /* background-color: #DEF5FF; */
+    
+  }
+
+  .gradient-1{
+    background:linear-gradient(#DEF5FF, #FFFFFF);
+  }
+  .gradient-2{
+    background:linear-gradient(#FFF4DC, #FFFFFF);
+  }
+
+  .gradient-3{
+    background:linear-gradient(#F2E8FF, #FFFFFF);
+  }
+
+  /* .card-btn{
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 600px;
+    border-radius: 0px;
+    border: none;
+    
+    margin-top:33px;
+  } */
+   .card-btn{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px ;
+    font-size: 1rem;
+   }
+   .card-btn:hover {background: #eee;}
+  .card-btn-1{
+    color:#64C8FF;
+  }
+  .card-btn-2{
+    color:#F0AA00;
+  }
+  .card-btn-3{
+    color:#8700FF;
+  }
+
+
 
   @media screen and (max-width:576px) {
     .site-name,
@@ -158,6 +241,12 @@
         text-align: center;
         
       }
+
+     .curriculum-container{
+      grid-template-columns: repeat(1,1fr);
+      justify-items: center;
+      gap: 24px;
+     } 
      
 
   }
