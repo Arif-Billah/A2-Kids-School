@@ -8,6 +8,9 @@
 }
 
 /* shared style */
+.body-width{
+  max-width: 1440px;
+}
 .display-flex{
     display: flex;
 }
@@ -199,6 +202,108 @@
     color:#8700FF;
   }
 
+/* Stories */
+.stories{
+  background-image:linear-gradient(#FFFFFF,rgba(254, 163, 1, 1)), url(../assets/bg.png);
+}
+.stories-container{
+  display: grid;
+  /* grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,300px); */
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,300px) 100px;
+  gap:20px;
+  
+ 
+}
+#story-1{
+  /* grid-row: span 2;
+  grid-column: span 2; */
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#story-1 img{
+  /* max-width: 540px; */
+  /* max-height: 337px; */
+  width: 100%;
+}
+.story-img img{
+  /* max-width: 290px;
+  max-height: 175px; */
+  width: 100%;
+}
+.story{
+  /* border:6px solid red; */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+/* .display-grid{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+} */
+.btn-flex{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.story-btn{
+  margin-bottom: 100px;
+}
+
+
+/* footer */
+.footer{
+  /* background-color: #01ACFD; */
+  /* background-color: green; */
+  background-color:  rgba(255, 0, 0, 0.5);
+}
+.footer-section{
+  /* justify-content: space-around;
+  align-items: center;
+  gap:50px */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: start;
+  justify-content: start;
+  /* text-align: center; */
+  gap:50px;
+}
+.footer-content{
+  /* border: 5px solid tomato; */
+  /* background-color: blue; */
+  margin-top: 6rem;
+  color:#FFFFFF;
+}
+
+.logo-footer{
+  align-items: start;
+  justify-content: start; 
+}
+.footer-nav{
+  /* margin: 0; */
+  margin-left: -2rem;
+}
+.footer-nav li a{
+  color:#FFFFFF;
+}
+.display-grid-footer{
+
+
+  /* display
+  : flex;
+  flex-direction: column;
+  align-items: start; */
+}
+.footer-about{
+  /* text-align: center; */
+}
+
 
 
   @media screen and (max-width:576px) {
@@ -247,6 +352,53 @@
       justify-items: center;
       gap: 24px;
      } 
+
+     #btn-group-awsome{
+      display: none;
+     }
+
+     /* Stories */
+
+     .stories-container{
+      display: grid;
+      /* grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(3,300px); */
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,300px) 25px;
+      gap:50px;
+      
+     
+    }
+
+    #story-1{
+      /* grid-row: span 2;
+      grid-column: span 2; */
+      display: none;
+      grid-row: span 0;
+      grid-column: span 0;
+
+    }
+
+    /* footer section */
+
+    .footer-section{
+      /* justify-content: space-around;
+      align-items: center;
+      gap:50px */
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      align-items: start;
+      justify-content: start;
+      /* text-align: center; */
+      gap:20px;
+    }
+
+    .footer-content{
+      /* border: 5px solid tomato; */
+      /* background-color: blue; */
+      margin-top: 2rem;
+      color:#FFFFFF;
+    }
      
 
   }
